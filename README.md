@@ -12,8 +12,8 @@ To run the app locally:
 
 You can now use the app by browsing to `localhost:5000`
 
-2. In Kubernetes:
-    [Note: To run in Kubernetes, make sure you have a local Kubernetes cluster installed, for example via minikube or one bundled within Docker Desktop(or any other). This can also be run in a Kubernetes cluster elsewhere, for instance in the cloud, with little to no changes to the spec file(kubernetes.yaml)]
+2. In Kubernetes: \
+    [Note: To run in Kubernetes, make sure you have a local Kubernetes cluster installed, for example via minikube or one bundled within Docker Desktop(or any other). This can also be run in a Kubernetes cluster elsewhere, for instance in the cloud, with little to no changes to the spec file(kubernetes.yaml)] \
 
 - If not already done so, build a docker image from the available Dockerfile
     `docker build -t wordplay:latest -f Dockerfile .`
