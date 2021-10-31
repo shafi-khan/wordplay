@@ -1,0 +1,42 @@
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wordplay
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wordplay
+
+  template:
+    metadata:
+      labels:
+        app: wordplay  
+    spec:
+      containers:
+        - name: wordplay
+          image: wordplay:latest # This references a local image built from the Dockerfile.
+          imagePullPolicy: Never # This allows us to be able to use the image that is built/stored locally.
+          ports:
+          - containerPort: 80          
+
+
+---
+# Service (type= Load Balancer) to expose the deployment
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordplay
+spec:
+  selector:
+    matchLabels:
+      app: wordplay
+  ports:
+  - port: 5000
+    protocol: TCP
+    targetPort: 5000
+  selector:
+    app: wordplay
+  type: LoadBalancer

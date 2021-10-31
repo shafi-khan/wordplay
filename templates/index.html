@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>WordPlay</title>
+</head>
+<body>
+  <h3> WordPlay </h3>
+  <h4> Following is the list of endpoints available: </h4>
+  <p> <a href="{{ url_for('random') }}">/random</a>  - Retrieves a random word </p>
+  <p> <a href="{{ url_for('frequency', word_in='python') }}">/words/{insert_your_word}/frequency</a> -  Returns the frequency score of a given word </p>
+  <p> <a href="{{ url_for('syllables', word_in='python') }}">/words/{insert_your_word}/syllables</a> -  Returns number of syllables in a given word </p>
+  <p> <a href="{{ url_for('pronunciation', word_in='python') }}">/words/{insert_your_word}/pronunciation</a> -  Returns pronunciation information of a given word </p>
+  <p> <a href="{{ url_for('rhymes', word_in='python') }}">/words/{insert_your_word}/rhymes</a> -  Returns rhymes of a given word </p>
+  <p> <a href="{{ url_for('examples', word_in='python') }}">/words/{insert_your_word}/examples</a> -  Returns example uses </p>
+  <p> <a href="{{ url_for('definitions', word_in='python') }}">/words/{insert_your_word}/definitions</a> -  Returns definition(s) of a given word </p>
+  <p> <a href="{{ url_for('synonyms', word_in='python') }}">/words/{insert_your_word}/synonyms</a> -  Returns synonyms </p>
+  <p> <a href="{{ url_for('antonyms', word_in='python') }}">/words/{insert_your_word}/antonyms</a> -  Returns antonyms </p>
+  </br></br></br>
+  <p> Please note: You can replace {insert_your_word} with a word of your choice. Defaults to the word <i>python</i> </p>
+  </br></br></br>
+  <p> <i> This project is based on: <a href="https://rapidapi.com/dpventures/api/wordsapi">Words API</a> </i> </p> 
+</body>
+</html>
