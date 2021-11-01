@@ -1,5 +1,5 @@
 # WordPlay
-This project consists of a Flask-based application which allows you to retrieve information about English words. In the backend, it uses APIs based one 'WordsAPI' (https://rapidapi.com/dpventures/api/wordsapi/).
+This project consists of a Flask-based application which allows you to retrieve information about English words. In the backend, it uses APIs based on 'WordsAPI' (https://rapidapi.com/dpventures/api/wordsapi/).
 
 
 To run the app locally:
