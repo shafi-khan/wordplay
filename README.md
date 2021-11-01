@@ -2,7 +2,7 @@
 This project consists of a Flask-based application which allows you to retrieve information about English words. In the backend, it uses APIs based on 'WordsAPI' (https://rapidapi.com/dpventures/api/wordsapi/).
 
 
-To run the app locally:
+To run the app locally: \
     [Note: Before proceeding, make sure you replace the placeholder value for the key 'x-rapidapi-key' in `app.py` with an actual API key, which can be availed for free from https://rapidapi.com/dpventures/api/wordsapi/]
 1. In Docker:
 - Build a docker image from the available Dockerfile
